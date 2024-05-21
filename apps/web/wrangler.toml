@@ -3,9 +3,9 @@ compatibility_date = "2024-03-29"
 compatibility_flags = ["nodejs_compat"]
 
 [[d1_databases]]
-binding = "DATABASE"
-database_name = "dev-d1-anycontext"
-database_id = "fc562605-157a-4f60-b439-2a24ffed5b4c"
+binding = "DB" # i.e. available in your Worker on env.DB
+database_name = "supermemory"
+database_id = "4f9d583e-4da6-4494-ac6c-d5a2207d64a1"
 
 [[unsafe.bindings]]
 name = "RATELIMITER"
