@@ -18,9 +18,9 @@ binding = "AI"
 #  queue = "batch-vector-queue"
 
 [[kv_namespaces]]
-binding = "KV"
-id = "37a90353da63401e84e20e71165531d0"
-preview_id = "c58b6202814f4224acea97627d0c18aa"
+binding = "SUPERMEMORY_KV"
+id = "12dc3096052c42959bdaf29eaa3bc29e"
+preview_id = "9aa453e040674566a756f0685433126e"
 
 [placement]
 mode = "smart"
