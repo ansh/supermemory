@@ -26,4 +26,5 @@ export const {
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     }),
   ],
+  debug: process.env.NODE_ENV === "development",
 });
