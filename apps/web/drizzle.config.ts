@@ -1,15 +1,12 @@
 import { type Config } from "drizzle-kit";
 
-const localDb = {
-	url: process.env.LOCAL_DB_URL!
-}
-
 export default {
-  schema: "./src/server/db/schema.ts",
-  driver: process.env.LOCAL_DB_URL ? "better-sqlite" : "d1",
-  dbCredentials: process.env.LOCAL_DB_URL ? localDb : {
+  schema: "./app/helpers/server/db/schema.ts",
+  dialect: "sqlite",
+  driver: "d1",
+  dbCredentials: {
     wranglerConfigPath: "./wrangler.toml",
-    dbName: "dev-d1-anycontext",
+    dbName: "",
   },
-  out: "drizzle",
+  out: "migrations",
 } satisfies Config;
