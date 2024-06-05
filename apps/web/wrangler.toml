@@ -11,7 +11,7 @@ binding = "STORAGE"
 bucket_name = "dev-r2-anycontext"
 
 [[d1_databases]]
-binding = "DB" # i.e. available in your Worker on env.DB
+binding = "DATABASE" # i.e. available in your Worker on env.DB
 database_name = "supermemory"
 database_id = "4f9d583e-4da6-4494-ac6c-d5a2207d64a1"
 
